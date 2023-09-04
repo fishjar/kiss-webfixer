@@ -5,6 +5,7 @@
 ## 收录网站
 
 - [x] www.phoronix.com
+- [x] t.me
 
 如果有其他网站需要修复，请提交 [issues](https://github.com/fishjar/kiss-webfixer/issues/new/choose)
 
