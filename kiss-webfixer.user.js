@@ -7,6 +7,7 @@
 // @homepageURL     https://github.com/fishjar/kiss-webfixer
 // @license         MIT
 // @match           *://www.phoronix.com/*
+// @match           *://t.me/*
 // @grant           none
 // @downloadURL     https://fishjar.github.io/kiss-webfixer/kiss-webfixer.user.js
 // @updateURL       https://fishjar.github.io/kiss-webfixer/kiss-webfixer.user.js
@@ -15,6 +16,7 @@
 (function () {
   var sites = {
     "www.phoronix.com": ".content",
+    "t.me": ".js-message_text",
   };
 
   var gapTags = ["BR", "WBR"];
