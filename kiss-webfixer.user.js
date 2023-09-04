@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name            kiss-webfixer
 // @namespace       https://github.com/fishjar/kiss-webfixer
-// @version         0.0.1
+// @version         0.0.2
 // @description     Used in conjunction with [KISS Translator], a repair script for non-standard web pages. (配合 [简约翻译] 使用的，针对不规范网页的修复脚本。)
 // @author          Gabe<yugang2002@gmail.com>
 // @homepageURL     https://github.com/fishjar/kiss-webfixer
