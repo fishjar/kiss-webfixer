@@ -7,7 +7,7 @@
 // @homepageURL     https://github.com/fishjar/kiss-webfixer
 // @license         MIT
 // @match           *://www.phoronix.com/*
-// @match           *://t.me/*
+// @match           *://t.me/s/*
 // @grant           none
 // @downloadURL     https://fishjar.github.io/kiss-webfixer/kiss-webfixer.user.js
 // @updateURL       https://fishjar.github.io/kiss-webfixer/kiss-webfixer.user.js
