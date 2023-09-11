@@ -18,20 +18,20 @@
    * 需要修复的站点列表
    * - regex 正则表达式，匹配网址
    * - selector 需要修复的选择器
-   * - rootSlector 需要监听的选择器，可留空
+   * - rootSelector 需要监听的选择器，可留空
    * - fixer 修复函数，可针对不同网址，选用不同修复函数
    */
   var sites = [
     {
       regex: /www.phoronix.com/,
       selector: ".content",
-      rootSlector: "",
+      rootSelector: "",
       fixer: brFixer,
     },
     {
       regex: /t.me\/s\//,
       selector: ".tgme_widget_message_text",
-      rootSlector: ".tgme_channel_history",
+      rootSelector: ".tgme_channel_history",
       fixer: brFixer,
     },
   ];
@@ -98,9 +98,9 @@
    * 查找、监听节点，并执行修复函数
    * @param {*} selector
    * @param {*} fixer
-   * @param {*} rootSlector
+   * @param {*} rootSelector
    */
-  function run(selector, fixer, rootSlector) {
+  function run(selector, fixer, rootSelector) {
     var mutaObserver = new MutationObserver(function (mutations) {
       mutations.forEach(function (mutation) {
         mutation.addedNodes.forEach(function (addNode) {
@@ -110,8 +110,8 @@
     });
 
     var rootNodes = [document];
-    if (rootSlector) {
-      rootNodes = document.querySelectorAll(rootSlector);
+    if (rootSelector) {
+      rootNodes = document.querySelectorAll(rootSelector);
     }
 
     rootNodes.forEach(function (rootNode) {
@@ -129,7 +129,7 @@
     for (var i = 0; i < sites.length; i++) {
       var site = sites[i];
       if (site.regex.test(document.location.href)) {
-        run(site.selector, site.fixer, site.rootSlector);
+        run(site.selector, site.fixer, site.rootSelector);
         break;
       }
     }
