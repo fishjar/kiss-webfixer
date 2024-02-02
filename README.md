@@ -1,5 +1,10 @@
 # kiss-webfixer
 
+> 注：本项目功能已合并至以下两个项目，故不再更新，仅作参考。
+>
+> - 简约翻译插件: https://github.com/fishjar/kiss-translator
+> - 社区订阅规则: https://github.com/fishjar/kiss-rules
+
 配合 [简约翻译](https://github.com/fishjar/kiss-translator) 使用的，针对不规范网页的修复脚本。
 
 ## 收录网站
